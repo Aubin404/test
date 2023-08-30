@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: 'Google Sans';
+    src: url('Police\ D\'écriture/google-sans-cufonfonts/ProductSans-Black.ttf') format('ttf');
+    /* Ajoutez d'autres formats de police si nécessaire */
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans Myanmar UI';
+    src: url('Police\ D\'écriture/Noto_Sans_Myanmar/NotoSansMyanmar-Black.ttf') format('ttf');
+    /* Ajoutez d'autres formats de police si nécessaire */
+  }
+  
+  body {
+    font-family: "Google Sans","Noto Sans Myanmar UI", Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .login-form {
+    width: 450px;
+    height: 503px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 50px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .login-form span {
+    padding-bottom: 0;
+    padding-top: 16px;
+    color: #202124;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .login-form p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #202124;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group input {
+    font-size: 16px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #2457e4;
+    border: 1px solid #ddd;
+  }
+  
+  input[type="email"]:focus + label,
+  input[type="password"]:focus + label,
+  input[type="email"]:not(:placeholder-shown) + label,
+  input[type="password"]:not(:placeholder-shown) + label {
+    top: -12px;
+    font-size: 13px;
+    color: #2457e4;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #2457e4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2457e4;
+  }
+  
+  .form-links {
+    margin-top: 100px;
+  }
+  
+  .form-links a {
+    text-decoration: none;
+    color: #666;
+  }
+  
+  .form-links a:hover {
+    color: #333;
+  }
+  
+  .additional-links {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .additional-links p {
+    font-size: 12px;
+    color: #999;
+  }
+
+  head > link[rel="icon"] {
+    border-radius: 500px;
+  }
+
